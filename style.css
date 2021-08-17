@@ -1,6 +1,54 @@
-*{
-    padding: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #2596BE;
+}
+
+.logo>a{
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    justify-content: space-between; 
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.center{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    padding: 70px 0px 15px 15px;
+    background-color: var(--primary-color);
+}
+
+.menu{
+    display: flex;
+}
+
+.menu>a{
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.menu>a:hover{
+    border-bottom: 2px solid #fff;
 }
 
 .container{
@@ -10,4 +58,50 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
+}
+
+label{
+    padding: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+/* .button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+} */
+
+.button{
+    border: 1px solid var(--primary-color);
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: var(--primary-color);
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.button:hover{
+    border:1px solid var(--primary-color);
+    font-size: 15px;
+    color: var(--primary-color);
+    background-color: #fff;
+}
+
+#output{
+    font-size: 20px;
+    font-weight: bold;
 }

@@ -5,14 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>is Triangle?</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/isTriangle/isTriangle.html">is Triangle?</a>
-        <a href="/Quiz/Quiz.html">Quiz</a>
-        <a href="/Hypotenuse/Hypotenuse.html">Hypotenuse</a>
-        <a href="/AreaOfTriangle/AOT.html">Area of Triangle</a>
+    <nav class="center">
+        <div class="logo">
+            <a href="/" >fun with triangles</a>
+        </div>
+       
+        <div class="menu">
+            <a href="/isTriangle/isTriangle.html">is Triangle?</a>
+            <a href="/Quiz/Quiz.html">Quiz</a>
+            <a href="/Hypotenuse/Hypotenuse.html">Hypotenuse</a>
+            <a href="/AreaOfTriangle/AOT.html">Area of Triangle</a>
+        </div>
+       
     </nav>
 
     <div class="container">
@@ -26,9 +33,11 @@
         <label for="angleThree">Angle 3</label>
         <input id="angleThree" type="text">
 
-        <div>
-            <button id="checkButton">is Triangle?</button>
+        <div >
+            <button class="button" id="checkButton">is Triangle?</button>
         </div>
+
+        <div id="output"></div>
     
     </div>
     
